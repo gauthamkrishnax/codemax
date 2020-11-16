@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codemax</title>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script>
+        function myFunction() {
+          var x = document.getElementById("navlinks");
+          if (x.style.display === "flex") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "flex";
+          }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="space-between">
+            <div class="flex-start"><div id=logorectangle></div> <h1 class="logo medium">CODEMAX</h1></div>
+            <a href="javascript:void(0);" class="icon hide-on-big" onclick="myFunction()">
+                <span class="iconify" data-inline="false" data-icon="radix-icons:hamburger-menu" style="color: #ffffff; font-size: 40px;"></span>
+            </a>
+        </div>
+        <nav id="navlinks">
+            <ul>
+                <li><a class="links" href="index.html">Home</a></li>
+                <li><a class="links" href="about.html">About</a></li>
+                <li><a class="links" href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero-headings">
+            <h2 class="large">Join the Ride.</h2>
+            <h3 class="paragraph">Experience the world’s largest coding conference.</h3>
+            <button class="button" type="button">Register</button>
+        </section>
+        <section id="hero-illustration">
+            <img src="assets/illustration.png" alt="A girl coding and riding a rocket">
+        </section>
+    </main>
+    <footer>
+        <div id="dark-bg">
+        <div id="socialmedia-icons">
+            <span class="iconify" data-inline="false" data-icon="cib:slack" style="color: #ffffff;"></span>
+            <span class="iconify" data-inline="false" data-icon="ant-design:github-filled" style="color: #ffffff; "></span>
+            <span class="iconify" data-inline="false" data-icon="cib:facebook" style="color: #ffffff;"></span>
+        </div>
+        <div class="flex-start center">
+        <div><hr></div>
+        <img id="my-logo" src="assets/mylogo.svg" alt="Owner's website logo">
+        </div>
+        </div>
+        <img id="darkvector" src="assets/dark-bg-vector.svg" alt="Dark background">
+    </footer>
+</body>
+</html>
